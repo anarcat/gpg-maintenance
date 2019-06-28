@@ -3,6 +3,8 @@
 KEYSERVER="hkps://keys.openpgp.org"
 
 FILTER="cat"
+#KEYRING_SIZE=1000
+#FILTER="pv -l -s $KEYRING_SIZE"
 
 # minimum number of seconds to way
 DELAY_BASE=120
