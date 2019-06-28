@@ -11,4 +11,4 @@ do
 		sleep $(( $(tr -cd "[:digit:]" < /dev/urandom | head -c 3) + 300 ))
 		gpg --batch --no-tty --no-auto-check-trustdb --refresh-keys "$fingerprint" 2> /dev/null
 	done
-done &
+done
