@@ -3,7 +3,7 @@
 FILTER="cat"
 
 # another filter can be enabled with, for example:
-# FILTER="grep -v FINGERPRINT"
+FILTER="grep -v C4BC2DDB38CCE96485EBE9C2F20691179038E5C6"
 
 while true
 do
