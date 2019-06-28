@@ -18,7 +18,7 @@ do
 				| sort --random-sort)
 	do
 		echo "I: refreshing $fingerprint..."
-		gpg --batch --no-tty --no-auto-check-trustdb --keyserver "$KEYSERVER" --refresh-keys "$fingerprint" 2> /dev/null
+		gpg --batch --no-tty --no-auto-check-trustdb --keyserver "$KEYSERVER" --refresh-keys "$fingerprint"
                 delay=$(( $(tr -cd "[:digit:]" < /dev/urandom | head -c 3) + 300 ))
                 echo "I: sleeping for $delay seconds..."
 		sleep $delay
